@@ -296,8 +296,15 @@ tmux_conf_copy_to_os_clipboard=false
 #set -g status-position top
 
 
-# Willian Configs
+#  === Willian Configs ===
+# mouse
 set -g mouse on
 
+# prefix
 set -g prefix `
 bind ` send-prefix
+
+# Split
+bind | split-window -h
+bind - split-window -v 
+bind _ split-window -v
